@@ -40,4 +40,19 @@ print("************* Calcul de la moyen *************,"\n")
 average_gc - df["Pourcentage GC"].mean()
 print(f"Pourcentage moyen de GC :{average_gc:3f}%")
 
+#5) Ajouter une nouvelle colonne avec des calculs 
+print("************* Ajout d'une nouvelle colonne *************")
+
+#Ajouter une nouvelle colonne " longueur catégorisée "
+df["catégorie longueur"] = df ["longueur "] apply (Laubde x : "longue" if × 10 else 
+print (df)
+
+#6)Ajout une colonne comptant les "G"
+df ["Nombre de G] =["Séquence"]str.count("G")
+
+print ("***** Nombre de Ajout *****)
+print (df,"\n").
+
+
+
 
