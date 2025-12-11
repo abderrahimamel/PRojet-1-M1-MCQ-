@@ -27,4 +27,28 @@ print("******************* Operations *********************")
 sequences =df["Longueur"]
 print(sequences,"\n","\n" )
 
+# Affichage avec une bibliotheque de visualisation (matplotlib)
+#import matplotlib.pyplot as plt
+
+#Affichage du tableau de donnees sous forme de graphique
+#plt.figure(figsize=10,6)
+#plt.bar(df["Longeur"]. df["Pourcentage GC"], Color=("skybleu")
+#plt.xlabel("Sequences")
+#plt.ylabl("Pourcentage GC")
+#plt.title("porcentage de GC par sequece")
+#plt.show()
+#print("\n")
+
+#3)Filtrer les sequences avec un pourcentage de GC supriere a 10%
+print(*************Filtrage avec pourcentage %*************)
+
+filtred_df["Pourcentage GC"] > 10]
+print(filtred_df,"\n")
+
+#4)Calculer la moyen du pourcentage de GC
+print("************* Calcul de la moyen *************,"\n")
+
+average_gc - df["Pourcentage GC"].mean()
+print(f"Pourcentage moyen de GC :{average_gc:3f}%")
+
 
