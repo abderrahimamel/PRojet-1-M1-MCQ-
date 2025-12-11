@@ -27,17 +27,6 @@ print("******************* Operations *********************")
 sequences =df["Longueur"]
 print(sequences,"\n","\n" )
 
-# Affichage avec une bibliotheque de visualisation (matplotlib)
-#import matplotlib.pyplot as plt
-
-#Affichage du tableau de donnees sous forme de graphique
-#plt.figure(figsize=10,6)
-#plt.bar(df["Longeur"]. df["Pourcentage GC"], Color=("skybleu")
-#plt.xlabel("Sequences")
-#plt.ylabl("Pourcentage GC")
-#plt.title("porcentage de GC par sequece")
-#plt.show()
-#print("\n")
 
 #3)Filtrer les sequences avec un pourcentage de GC supriere a 10%
 print(*************Filtrage avec pourcentage %*************)
