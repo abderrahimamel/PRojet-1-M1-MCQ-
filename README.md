@@ -27,47 +27,57 @@ print("******************* Operations *********************")
 sequences =df["Longueur"]
 print(sequences,"\n","\n" )
 
+# 3)Filtrer les sequences avec une Longueur supérieure à 10
+print("*************Filtrage avec Longueur **************","\n")
 
-#3)Filtrer les sequences avec une longeure est supriere a 10
-print("*************Filtrage avec longeure *************","\n")
+filtered_df = df[df["Longueur"] > 10]
+print(filtered_df, "\n","\n")
 
-filtred_df["longeure"] > 10]
-print(filtred_df,"\n")
+# 4)Calculer la moyenne du pourcentage de GC
+print("************* Calcul de la moyenne *************,"\n")
 
-#4)Calculer la moyen du pourcentage de GC
-print("************* Calcul de la moyen *************,"\n")
+average_gc = df["Pourcentage GC"].mean()
+print(f"Pourcentage moyen de GC :{average_gc:3f}%","\n","\n")
 
-average_gc - df["Pourcentage GC"].mean()
-print(f"Pourcentage moyen de GC :{average_gc:3f}%")
-
-#5) Ajouter une nouvelle colonne avec des calculs 
+# 5) Ajouter une nouvelle colonne avec des calculs 
 print("************* Ajout d'une nouvelle colonne *************")
 
 #Ajouter une nouvelle colonne " catégorisée "
-df["catégorie "] = df ["Riche"] apply (Lambda x : "rich" if × 55
-print (df)
+print ("******************Ajouter une colonne Catégorie GC ***************" "\n")
 
-df["catégorie"] = df ["Moyen"] apply ( lambda x : " means" if × 45 or order 
+df["Catégorie GC"] = df["Pourcentage GC"].apply(lambda x: "rich" if x>55 else "weak")
+print(df, "\n")
 
-df["catégorie"] = df ["Faible "] apply (lambda x:" weak" if × 45
+df["Catégorie GC"] = df["Pourcentage GC"].apply(lambda x: "means"if 45<x<55 else "auther")
+print(df,"\n")
 
-#6)Ajout une colonne comptant les "G"
-df ["Nombre de G] =["Séquence"]str.count("G")
+df["Catégorie GC"] = df["Pourcentage GC"].apply(lambda x: "weak" if x<45 else "rich")
+print(df, "\n")
 
-print ("***** Nombre de Ajout *****)
-print (df,"\n").
+# 6)ajouter une colonne donnant le nombre de"G" dans chaque séquence
 
-#7) calculer l'ecrant-type du % de GC et de la longueur 
-#l'écart-type de % GC s_gc = df ["pourcentage GC"] mean()
+df ["Nombre de G"] =
+df["Séquence"].str.count("G")
+print ("****** Nombre de "G" Ajoutés ****************", "\n")
+print (df,"\n")
 
-#l'ecart_type_longueur = df ["Longueur"] mean()
 
-print (f" ecart_type de GC :{s_gc:3.}%","\n",\n")
+# 7)Calcul de l'écart-type du %GC et de la longueur des séquences
 
-print(f"Écart_type de la longureur:{s_gc:.3f},"\n","\n"
+#print("******* l'écart-type de %GC et de la longueur des séquences*******","\n")
 
-#___8)sauvegarder le tableau final dans un ficher
-#sauvegarder le DataFrame dans un fichier csv
-#df.to_csv("tableau_sequences_csv",index=False)
+#l'écart-type de %GC
+S_gc = df["Pourcentage GC"].mean()
+print(f"écart-type de GC : {S_gc:.3f}%","\n","\n")
+
+#l'écart-type de longueur 
+S_gc = df["Longueur"].mean()
+print(f"écart-type de longueur: {S_gc:.3f}%","\n","\n")
+
+
+# 8)Sauvegarde et chargement des données avec panda
+#Sauvegarder le DataFrame dans un fichier CSV
+df.to_csv("tableau_sequences.csv", index=False)
+
 
 
