@@ -28,10 +28,10 @@ sequences =df["Longueur"]
 print(sequences,"\n","\n" )
 
 
-#3)Filtrer les sequences avec un pourcentage de GC supriere a 10%
-print(*************Filtrage avec pourcentage %*************)
+#3)Filtrer les sequences avec une longeure est supriere a 10
+print("*************Filtrage avec longeure *************","\n")
 
-filtred_df["Pourcentage GC"] > 10]
+filtred_df["longeure"] > 10]
 print(filtred_df,"\n")
 
 #4)Calculer la moyen du pourcentage de GC
