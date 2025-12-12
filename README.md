@@ -53,19 +53,17 @@ df ["Nombre de G] =["Séquence"]str.count("G")
 print ("***** Nombre de Ajout *****)
 print (df,"\n").
 
-#7) calculer l'ecrant-type du % de GC et de ka longueur 
+#7) calculer l'ecrant-type du % de GC et de la longueur 
 ecart-type-gc = df ['pourcentage GC'] std()
 
 ecart_type_longueur = df ['Longueur'] std()
+
 print ("\n7 ecart_type:")
-print (f"Écart_type GC:ecart_tyoe_gc: .3f)
-print(f"Écart_type longureur:{ecart_type_lingueur: .3f}")
+print ("Écart_type de GC:" , ecart_tyoe_gc)
+print("Écart_type de la longureur:",ecart_type_longueur)
 
-#___8)sauvegarder le tableau final dans un fichier CSV___
-#L'argument index =False permet de ne pas écrire l'indese de pandas.
-df.to _CSV('resultats_adn_final.CSV', index=False)
-
-print("\n###8 sauvrgarde###")
-print ("Le tableau final(avec les nouvelles colonnes)a été savaugardé dans 'resultats _adn_final.CSV'.")
+#___8)sauvegarder le tableau final dans un ficher
+#sauvegarder le DataFrame dans un fichier csv
+#df.to_csv("tableau_sequences_csv",index=False)
 
 
