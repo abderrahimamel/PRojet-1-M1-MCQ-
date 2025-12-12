@@ -54,13 +54,13 @@ print ("***** Nombre de Ajout *****)
 print (df,"\n").
 
 #7) calculer l'ecrant-type du % de GC et de la longueur 
-ecart-type-gc = df ['pourcentage GC'] std()
+#l'écart-type de % GC s_gc = df ["pourcentage GC"] mean()
 
-ecart_type_longueur = df ['Longueur'] std()
+#l'ecart_type_longueur = df ["Longueur"] mean()
 
-print ("\n7 ecart_type:")
-print ("Écart_type de GC:" , ecart_tyoe_gc)
-print("Écart_type de la longureur:",ecart_type_longueur)
+print (f" ecart_type de GC :{s_gc:3.}%","\n",\n")
+
+print(f"Écart_type de la longureur:{s_gc:.3f},"\n","\n"
 
 #___8)sauvegarder le tableau final dans un ficher
 #sauvegarder le DataFrame dans un fichier csv
