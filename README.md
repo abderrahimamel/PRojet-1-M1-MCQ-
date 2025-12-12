@@ -67,10 +67,12 @@ print (df,"\n")
 #print("******* l'écart-type de %GC et de la longueur des séquences*******","\n")
 
 #l'écart-type de %GC
+
 S_gc = df["Pourcentage GC"].mean()
 print(f"écart-type de GC : {S_gc:.3f}%","\n","\n")
 
 #l'écart-type de longueur 
+
 S_gc = df["Longueur"].mean()
 print(f"écart-type de longueur: {S_gc:.3f}%","\n","\n")
 
