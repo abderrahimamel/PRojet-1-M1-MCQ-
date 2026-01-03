@@ -17,7 +17,7 @@ data = {
 df = pd.DataFrame(data)
 print("**************** Creation et affichage *****************")
 
-# 1) Affichage du tableau
+# 1) Affichage du tableau 
 print("Tableau des séquences ADN :")
 print(df,"\n","\n")
 
